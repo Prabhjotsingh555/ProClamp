@@ -93,7 +93,7 @@ Starting time = 11-10-2023 1108
  IT WORKED
 20. Write the comments
  Test it = IT WORKED
-21.15. Commint to Github
+21. Commint to Github
 
 -------COMPLETED FOURTH STEP-------
 
@@ -107,5 +107,17 @@ Starting time = 11-10-2023 1222
 4. Write code in Program.cs file
 5. Write the comments
  Test it = IT WORKED
+6. Commint to Github
 
  -------COMPLETED FIFTH STEP-------
+
+ -------START SIXTH STEP-------
+
+Starting time = 11-10-2023 2023
+
+1. Update data annotation attribute for date and decimel string.
+2. Write comments
+ Test it = IT WORKED
+3. Commint to Github
+
+ -------COMPLETED SIXTH STEP-------
