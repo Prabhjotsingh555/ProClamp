@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Welcome"; //for set the value of ViewData["Title"] equal to "Welcome
+}
+
+<h2>Welcome</h2>  @*our h2 heading*@
+
+@*this Generate a list with a message (ViewData["Message"]) and repeate  number of times determined by ViewData["NumTimes"]
+    i test this by writng /HelloWorld/Welcome?name=Rick&numtimes=55 and this worked *@
+
+<ul>
+
+    @for (int i = 0; i < (int)ViewData["NumTimes"]; i++)
+    {
+        <li>@ViewData["Message"]</li>
+    }
+</ul>

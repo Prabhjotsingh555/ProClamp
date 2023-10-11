@@ -31,6 +31,35 @@ Starting time = 10-10-2023 0237
  Test it = IT WORKED
 4. Make another string with name and ID variable and comment previous one
  Test it = IT WORKED
-5. Commint to Github
+5. Write the comments
+6. Commint to Github
 
 -------COMPLETED SECOND STEP-------
+
+-------START THIRD STEP-------
+
+Starting time = 11-10-2023 1018
+
+1. Clone the respositery in the visual studio
+2. Open solution, clean solution and rebuild solution
+ Test it = IT WORKED
+3. Write the new index string in ProClampControlller.cs folder
+4. Right click on > View folder > add new folder > name it ProClamp > add > view > indesx.cshtml
+5. Wright code in this folder
+ Test it = NOT WORKED
+6. I forget to remove the comma in launchSettings.json in 6th page   ............EROR.........
+7. So I remove it
+ Test it = IT WORKED
+8. Changed the name from ProClamp to ProClamp App in the 14th line in Views > Shared > _Layout.cshtml
+ Test it = IT WORKED
+9. Change the h2 and title in Views > QuickClamp > Index.cshtml
+10. Change the title
+ Test it = IT WORKED
+11. Make new Welcome string in ProClampController.cs page 
+12. Make new razor empty Page with name Welcome.cshtml inside the Views > ProClamp
+13. Write the code in Welcome.cshtml page
+ Test it = IT WORKED
+14. Write the Comments
+15. Commint to Github
+
+-------COMPLETED THIRD STEP-------
