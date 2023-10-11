@@ -95,3 +95,17 @@ Starting time = 11-10-2023 1108
  Test it = IT WORKED
 21.15. Commint to Github
 
+-------COMPLETED FOURTH STEP-------
+
+-------START FIFTH STEP-------
+
+Starting time = 11-10-2023 1222
+
+1.Exmine the table data in the sql server
+2. Create a new class (SeedData) inside Models folder
+3. Write the properties and it's infomation in this class
+4. Write code in Program.cs file
+5. Write the comments
+ Test it = IT WORKED
+
+ -------COMPLETED FIFTH STEP-------
