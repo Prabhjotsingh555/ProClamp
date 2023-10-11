@@ -122,7 +122,7 @@ Starting time = 11-10-2023 0110
 
  -------COMPLETED SIXTH STEP-------
 
-  -------START SEVENTH STEP-------
+ -------START SEVENTH STEP-------
 
 Starting time = 11-10-2023 0111
 
@@ -139,3 +139,33 @@ Starting time = 11-10-2023 0111
 8. Commint to Github
 
 -------COMPLETED SEVENTH STEP-------
+
+-------START EIGHTH STEP-------
+
+Starting time = 11-10-2023 0211
+
+1. Write new string Rating in Clamp.cs class inside the Models folder
+2. Write the code in Index.cshtml file Views > Clamps > Index.cshtml
+3. Also in Create.cshtml Views > Clamps > Create.cshtml
+4. Updtae the SeedData by adding Rating in every columns Models > SeedData.cs
+5. Run The Commands Add-Migration Rating, Update-Database
+ IT NOT WORKED ............EROR.........
+6. Error was unknow name Rating
+7. To solve this issuse i close the project and clone from git again
+8. Open the solution, clean it and rebuild it
+9. Run it 
+ Test it = IT NOT WORKED ............EROR.........
+10. Error was unablw to open Database
+11. Now i have two error 
+12. To solve this issue i run the command Update-Database
+ Test it = IT WORKED
+13. Now i delete the all records from the table
+14. Now from starting i add the rating field
+15. Run The Commands Add-Migration Rating, Update-Database
+ Test it = IT WORKED
+16. Add comments
+17. Commit to Github
+
+-------COMPLETED EIGHTH STEP-------
+
+

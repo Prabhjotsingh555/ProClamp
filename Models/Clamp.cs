@@ -28,5 +28,6 @@ namespace ProClamp.Models
         [Column(TypeName = "decimal(18, 2)")]
         public decimal JawOpeningInInches { get; set; } // for jawopening capacity
         public string Application { get; set; } // for product apllication
+        public string Rating { get; set; } // new rating field i added in eighth step
     }
 }
