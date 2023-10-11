@@ -63,3 +63,35 @@ Starting time = 11-10-2023 1018
 15. Commint to Github
 
 -------COMPLETED THIRD STEP-------
+
+-------START FOURTH STEP-------
+
+Starting time = 11-10-2023 1108
+
+1. Makinfg a new class (Clamp.cs) inside the > Model folder > add > class
+2. Write the product properties in this class 
+3. Install Package  Microsoft.EntityFrameworkCore.SqlServer but it not installed  ............EROR.........
+4. I solve this through tools > Nuget Pacakeg Manger > Manage nuget pacakage for solution > paste : Microsoft.EntityFrameworkCore.SqlServer in the browse field
+5. Select the latest one > select the project > choose he version 3.1.0 > and install it
+ IT WORKED
+6. Create a new folder in the project with name Data 
+7. Add class in this folder and name it ProClampContext
+8. Write the code in this class
+9. Register the database context with the DI container by adding using MvcMovie.Data;, using Microsoft.EntityFrameworkCore; in the Startup.cs file
+10. Make connection string in this file by writing code
+11. Make a string connection for the ProClampContext Databse in the appsetting.json file
+12. Add Scaffold movie page > Controllers > Add > New Scaffolded item > MVC Controller with views, using Entity Framework
+13. choosing MvcMovieContext (MvcMovie.Data) in first search field and by clicking on add choose the default one 
+14. Add it
+!5. Run the Command Add-Migration InitialCreate > tools >  Nuget Pacakeg Manger > Package manager console
+ IT WORKED
+16. Run the command Update-Database
+ IT NOT WORKED ............EROR.........
+17. The error is clamp table name is already exists in the database so to solve this issue i close the current project and create a new project
+18. Through this new project i go to database and delete the old one
+19. Again open the previous projeect and run the command
+ IT WORKED
+20. Write the comments
+ Test it = IT WORKED
+21.15. Commint to Github
+

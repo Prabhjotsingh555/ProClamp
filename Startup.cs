@@ -1,3 +1,5 @@
+using ProClamp.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +26,8 @@ namespace ProClamp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<ProClampContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("ProClampContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
