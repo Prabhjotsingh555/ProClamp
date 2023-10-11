@@ -19,10 +19,36 @@ namespace ProClamp.Controllers
             _context = context;
         }
 
-        // GET: Clamps
-        public async Task<IActionResult> Index()
+
+        // GET: Movies
+        public async Task<IActionResult> Index(string ClampType, string searchString) //make a method for showing the list of Clamps through searching by material or by type
         {
-            return View(await _context.Clamp.ToListAsync());
+            // Use LINQ to get list of genres.
+            IQueryable<string> genreQuery = from m in _context.Clamp  // Using LINQ to get a list of filtered Clamp types for dropdown selection.
+
+                                            orderby m.Type
+                                            select m.Type;
+
+            var Clamps = from m in _context.Clamp  //Running a query to get a list of all clamps from the database.
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))  // If a search string is provided, filters the list of Clamps to showonly those with material containing the search string.
+            {
+                Clamps = Clamps.Where(s => s.Material.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(ClampType))  // If a clamp type is provided, filters the list of Clamps to show only those with choosed type.
+            {
+                Clamps = Clamps.Where(x => x.Type == ClampType);
+            }
+
+            var ClampTypeVM = new ClampTypeViewModel  // make a ViewModel containing a dropdown list of unique Clamp types and the filtered/unfiltered Clamps.
+            {
+                Type = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                Clamps = await Clamps.ToListAsync()
+            };
+
+            return View(ClampTypeVM); // Return the filtered or unfiltered Clamps to the view.
         }
 
         // GET: Clamps/Details/5

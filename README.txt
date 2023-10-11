@@ -113,7 +113,7 @@ Starting time = 11-10-2023 1222
 
  -------START SIXTH STEP-------
 
-Starting time = 11-10-2023 2023
+Starting time = 11-10-2023 0110
 
 1. Update data annotation attribute for date and decimel string.
 2. Write comments
@@ -121,3 +121,21 @@ Starting time = 11-10-2023 2023
 3. Commint to Github
 
  -------COMPLETED SIXTH STEP-------
+
+  -------START SEVENTH STEP-------
+
+Starting time = 11-10-2023 0111
+
+1. Update the index method in ClampsController.cs class
+ Test it = IT WORKED
+2. Again Update some lines in the same class
+ Test it = IT WORKED
+3. Make a new class (ClampTypeViewModel.cs) insidde the Models folder > Add > Class
+4. Write code in this class
+5. Update the ClampsController.cs class once again
+6. Update Index.cshtml inside the Views > Clamps > Index.cshtml
+7. Write the comments
+ Test it = IT WORKED
+8. Commint to Github
+
+-------COMPLETED SEVENTH STEP-------

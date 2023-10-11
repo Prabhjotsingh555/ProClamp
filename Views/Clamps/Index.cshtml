@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ProClamp.Models.Clamp>
+﻿@model ProClamp.Models.ClampTypeViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -9,69 +9,84 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form asp-controller="Clamps" asp-action="Index" method="get"> @*HTML form for sorting clmps through material or by type*@
+    <p>
+
+        <select asp-for="ClampType" asp-items="Model.Type"> @*The form includes a dropdown list for selecting Clamp types.*@
+            <option value="">All</option>
+        </select>
+
+        Material: <input type="text" asp-for="SearchString" /> @*Users can filter clamps by typing any material in the search string and clicking "Filter".*@
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.Clamps[0].Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Date)
+                @Html.DisplayNameFor(model => model.Clamps[0].Date)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Type)
+                @Html.DisplayNameFor(model => model.Clamps[0].Type)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Material)
+                @Html.DisplayNameFor(model => model.Clamps[0].Material)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.WeightInLB)
+                @Html.DisplayNameFor(model => model.Clamps[0].WeightInLB)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                @Html.DisplayNameFor(model => model.Clamps[0].Price)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.JawOpeningInInches)
+                @Html.DisplayNameFor(model => model.Clamps[0].JawOpeningInInches)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Application)
+                @Html.DisplayNameFor(model => model.Clamps[0].Application)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Type)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Material)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.WeightInLB)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.JawOpeningInInches)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Application)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Clamps)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Material)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WeightInLB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JawOpeningInInches)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Application)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
