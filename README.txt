@@ -1,4 +1,6 @@
-﻿Starting time = 10-10-2023 0235
+The ProClamp MVC project represents my journey in building a functional and user-friendly web application. Starting from scratch, I carefully crafted each element, overcoming challenges and learning along the way. The project, developed using C# and .NET Core 3.1, showcases my determination to create a seamless user experience. From setting up the initial project structure to integrating complex database functionalities, every step demanded attention to detail and problem-solving skills. Through persistence and continuous effort, I successfully implemented features, resolved errors, and enhanced the website’s overall design. This project not only reflects my technical abilities but also my commitment to delivering a high-quality product. It stands as a testament to my passion for programming and my capability to transform ideas into functional, well-executed applications.
+
+Starting time = 10-10-2023 0235
 Program name = ProClamp
 Program Purpose = Making a MVC project
 Program author = Prabhjot Singh
