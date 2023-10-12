@@ -31,6 +31,7 @@ namespace ProClamp.Models
         public string Application { get; set; } // for product apllication
 
         [Column(TypeName = "decimal(18, 2)")]
+        [Range(0.0, 5.0, ErrorMessage = "The value must be between 0.1 and 5.0")]
         public decimal Rating { get; set; } // new rating field i added in eighth step     
 
         [Display(Name = "Weight In LB")] //add for regular expression, length and required
