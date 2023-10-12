@@ -47,7 +47,7 @@ Starting time = 11-10-2023 1018
 4. Right click on > View folder > add new folder > name it ProClamp > add > view > indesx.cshtml
 5. Wright code in this folder
  Test it = NOT WORKED
-6. I forget to remove the comma in launchSettings.json in 6th page   ............EROR.........
+6. I forget to remove the comma in launchSettings.json in 6th page                                                           ............EROR............
 7. So I remove it
  Test it = IT WORKED
 8. Changed the name from ProClamp to ProClamp App in the 14th line in Views > Shared > _Layout.cshtml
@@ -70,7 +70,7 @@ Starting time = 11-10-2023 1108
 
 1. Makinfg a new class (Clamp.cs) inside the > Model folder > add > class
 2. Write the product properties in this class 
-3. Install Package  Microsoft.EntityFrameworkCore.SqlServer but it not installed  ............EROR.........
+3. Install Package  Microsoft.EntityFrameworkCore.SqlServer but it not installed                                               ............EROR............
 4. I solve this through tools > Nuget Pacakeg Manger > Manage nuget pacakage for solution > paste : Microsoft.EntityFrameworkCore.SqlServer in the browse field
 5. Select the latest one > select the project > choose he version 3.1.0 > and install it
  IT WORKED
@@ -86,7 +86,7 @@ Starting time = 11-10-2023 1108
 !5. Run the Command Add-Migration InitialCreate > tools >  Nuget Pacakeg Manger > Package manager console
  IT WORKED
 16. Run the command Update-Database
- IT NOT WORKED ............EROR.........
+ IT NOT WORKED                                                                                                                  ............EROR............
 17. The error is clamp table name is already exists in the database so to solve this issue i close the current project and create a new project
 18. Through this new project i go to database and delete the old one
 19. Again open the previous projeect and run the command
@@ -149,12 +149,12 @@ Starting time = 11-10-2023 0211
 3. Also in Create.cshtml Views > Clamps > Create.cshtml
 4. Updtae the SeedData by adding Rating in every columns Models > SeedData.cs
 5. Run The Commands Add-Migration Rating, Update-Database
- IT NOT WORKED ............EROR.........
+ IT NOT WORKED                                                                                             ............EROR............
 6. Error was unknow name Rating
 7. To solve this issuse i close the project and clone from git again
 8. Open the solution, clean it and rebuild it
 9. Run it 
- Test it = IT NOT WORKED ............EROR.........
+ Test it = IT NOT WORKED                                                                                    ............EROR............
 10. Error was unablw to open Database
 11. Now i have two error 
 12. To solve this issue i run the command Update-Database
@@ -168,4 +168,25 @@ Starting time = 11-10-2023 0211
 
 -------COMPLETED EIGHTH STEP-------
 
+-------START NINTH STEP-------
 
+Starting time = 12-10-2023 0748
+
+1. Clone the respositery in the visual studio
+2. Open solution, clean solution and rebuild solution
+ Test it = IT WORKED
+3. Add regularExpression, Required and StringLength
+ Test it = IT WORKED
+4. Now i tried to change rating string to decimel, so I change regular expression and string to decimel
+ Test it = IT  NOT WORKED                                                                                 ............EROR............
+5. to solve this issue First i try to run this without changing anything
+ Test it = IT  NOT WORKED 
+6. Delete the records form the table
+7. Then I delete the rating migration file > Migrations > 20231012120609_Rating.cs
+8. Now i changed the change regular expression and string to decimel again
+9. Run the commands Add-migration Rating and update-database
+ Test it = IT  NOT WORKED 
+10. Add the comments
+11. Commint to github
+
+-------COMPLETED NINTH STEP-------

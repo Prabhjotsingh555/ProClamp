@@ -32,7 +32,7 @@ namespace ProClamp.Models
                     Price = 1600M,
                     JawOpeningInInches = 36M,
                     Application = "Wood",
-                    Rating = "4.3" //new rating field add in every clamp
+                    Rating = 4.3M //new rating field add in every clamp
                 },
                 new Clamp  
                 {
@@ -44,7 +44,7 @@ namespace ProClamp.Models
                     Price = 31.75M,
                     JawOpeningInInches = 48M,
                     Application = "Metal",
-                    Rating = "3.9"
+                    Rating = 3.9M
                 },
                 new Clamp
                 {
@@ -56,7 +56,7 @@ namespace ProClamp.Models
                     Price = 18.50M,
                     JawOpeningInInches = 72M,
                     Application = "Metal",
-                    Rating = "2.8"
+                    Rating = 2.8M
                 },
                 new Clamp
                 {
@@ -68,7 +68,7 @@ namespace ProClamp.Models
                     Price = 19.99M,
                     JawOpeningInInches = 5.0M,
                     Application = "Steel",
-                    Rating = "4.5"
+                    Rating = 4.5M
                 },
                 new Clamp
                 {
@@ -80,7 +80,7 @@ namespace ProClamp.Models
                     Price = 27.20M,
                     JawOpeningInInches = 60M,
                     Application = "Woods",
-                    Rating = "3.2"
+                    Rating = 3.2M
                 },
                 new Clamp
                 {
@@ -92,7 +92,7 @@ namespace ProClamp.Models
                     Price = 22.90M,
                     JawOpeningInInches = 36M,
                     Application = "Wood",
-                    Rating = "4.0"
+                    Rating = 4.0M
                 },
                 new Clamp
                 {
@@ -104,7 +104,7 @@ namespace ProClamp.Models
                     Price = 29.45M,
                     JawOpeningInInches = 84M,
                     Application = "Metal",
-                    Rating = "2.5"
+                    Rating = 2.5M
                 },
                 new Clamp
                 {
@@ -116,7 +116,7 @@ namespace ProClamp.Models
                     Price = 35.60M,
                     JawOpeningInInches = 92M,
                     Application = "Metal",
-                    Rating = "3.7"
+                    Rating = 3.7M
                 },
                 new Clamp
                 {
@@ -128,7 +128,7 @@ namespace ProClamp.Models
                     Price = 1.99M,
                     JawOpeningInInches = 26M,
                     Application = "Metal",
-                    Rating = "4.1"
+                    Rating = 4.1M
                 },
                 new Clamp
                 {
@@ -140,7 +140,7 @@ namespace ProClamp.Models
                     Price = 29.99M,
                     JawOpeningInInches = 36M,
                     Application = "Industrial",
-                    Rating = "2.9"
+                    Rating = 2.9M
                 }
             );
             context.SaveChanges(); //save the change in the database context
