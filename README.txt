@@ -155,7 +155,7 @@ Starting time = 11-10-2023 0211
 8. Open the solution, clean it and rebuild it
 9. Run it 
  Test it = IT NOT WORKED                                                                                    ............EROR............
-10. Error was unablw to open Database
+10. Error was SqlException: Cannot open database "ProClampContext-1" requested by the login. The login failed.
 11. Now i have two error 
 12. To solve this issue i run the command Update-Database
  Test it = IT WORKED
@@ -190,3 +190,20 @@ Starting time = 12-10-2023 0748
 11. Commint to github
 
 -------COMPLETED NINTH STEP-------
+
+-------START DOING REST THINGS-------
+
+Starting time = 12-10-2023 1135
+
+1. Start adding new page (About Us)
+2. Create a new view Home > Add > View > AboutUs.cshtml
+3. Link it in _Layout.cshtml
+ Test it = IT  NOT WORKED                                                    ............EROR............
+4. Error was This localhost page can’t be found
+5. I forget to add Action method for displaying the About Us page in HomeController.cs file : Controllers > HomeController.cs
+ Test it = IT  NOT WORKED 
+6. Modifiy the page add images, fonts and colour
+7. Add readme in Github
+8. Link it to the Azure
+
+-------COMPLETED LAST STEP-------

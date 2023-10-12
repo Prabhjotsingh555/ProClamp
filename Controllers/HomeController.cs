@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace ProClamp.Controllers
 {
     public class HomeController : Controller
@@ -24,6 +25,11 @@ namespace ProClamp.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult AboutUs()
         {
             return View();
         }
