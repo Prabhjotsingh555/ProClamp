@@ -28,6 +28,7 @@ namespace ProClamp
             services.AddControllersWithViews();
             services.AddDbContext<ProClampContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("ProClampContext")));
+            services.AddApplicationInsightsTelemetry();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
