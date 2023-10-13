@@ -149,3 +149,13 @@ li:hover {
     font-family: 'Roboto Mono', monospace;
     font-family: 'Young Serif', serif;
 }
+
+#ha5 {
+    text-align: left;
+    padding-left: 2%;
+}
+
+#ha5:hover{
+    text-align: center;
+    color:midnightblue;
+}
